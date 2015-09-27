@@ -3,7 +3,7 @@
 
     "name": "SidebarOverflow",
     "description": "Remove distracting sidebars from StackOverflow.",
-    "version": "0.1",
+    "version": "0.1.1",
     "homepage_url": "http://shivankaul.com",
     "icons": {
         "64": "icons/64.png",
