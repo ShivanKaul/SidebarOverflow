@@ -11,8 +11,10 @@
         "128": "icons/128.png"
     },
     "content_scripts": [{
-        "matches": ["http://*.stackoverflow.com/*",
-            "http://stackoverflow.com/*", "http://*.stackexchange.com/*"
+        "matches": ["http://*.stackoverflow.com/*", 
+                    "http://stackoverflow.com/*", 
+                    "http://*.stackexchange.com/*",
+                    "http://superuser.com/*"
         ],
         "js": ["src/remove.js"],
         "run_at": "document_end"
