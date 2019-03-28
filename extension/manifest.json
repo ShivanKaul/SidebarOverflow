@@ -11,10 +11,13 @@
         "128": "icons/128.png"
     },
     "content_scripts": [{
-        "matches": ["http://*.stackoverflow.com/*",
-            "http://stackoverflow.com/*", "http://*.stackexchange.com/*",
-            "http://serverfault.com/*", "http://askubuntu.com/*", 
-            "https://mathoverflow.net/*", "https://stackapps.com/*"
+        "matches": ["*://*.stackoverflow.com/*",
+                    "*://*.stackexchange.com/*",
+                    "*://*.serverfault.com/*",
+                    "*://*.superuser.com/*",
+                    "*://*.askubuntu.com/*",
+                    "*://*.stackapps.com/*",
+                    "*://*.mathoverflow.net/*"
         ],
         "js": ["src/remove.js"],
         "run_at": "document_end"
