@@ -1,5 +1,5 @@
 var hiring = document.getElementById("hireme");
-var meta = document.getElementsByClassName("module community-bulletin")[0];
+var meta = document.getElementById("sidebar").children[1];
 var hot_network_qs = document.getElementById("hot-network-questions");
 var chat = document.getElementById("chat-feature");
 
