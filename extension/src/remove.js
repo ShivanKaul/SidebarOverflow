@@ -1,17 +1,22 @@
-var hiring = document.getElementById("hireme");
-var meta = document.getElementById("sidebar").children[1];
-var hot_network_qs = document.getElementById("hot-network-questions");
-var chat = document.getElementById("chat-feature");
+getOptions(function (items) {
+  if (items.enableSidebarOverflow) removeSidebars(items);
+});
 
-if (hiring) {
+function removeSidebars(options) {
+  let hiring = document.getElementById("hireme");
+  let meta = document.querySelector('[data-tracker="cb=1"]');
+  let hot_network_qs = document.getElementById("hot-network-questions");
+  let chat = document.getElementsByClassName("js-sidebar-zone");
+  if (options.hideSidebarOverflowHire && hiring) {
     hiring.parentNode.removeChild(hiring);
-}
-if (meta) {
+  }
+  if (options.hideSidebarOverflowMeta && meta) {
     meta.parentNode.removeChild(meta);
-}
-if (hot_network_qs) {
+  }
+  if (options.hideSidebarOverflowHqs && hot_network_qs) {
     hot_network_qs.parentNode.removeChild(hot_network_qs);
-}
-if (chat) {
-    chat.parentNode.removeChild(chat);
+  }
+  if (options.hideSidebarOverflowChat && chat.length) {
+    chat.item(0).parentNode.removeChild(chat.item(0));
+  }
 }

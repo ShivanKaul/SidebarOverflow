@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SidebarOverflow Options</title>
+  </head>
+  <body style="width: 300px">
+    <div>
+      <label>
+        Remove sidebars from stack* sites.
+        <input id="enableSidebarOverflow" type="checkbox" />
+      </label>
+      <ul>
+        <li>
+          <input id="hideSidebarOverflowMeta" type="checkbox" />
+          Hide meta
+        </li>
+        <li>
+          <input id="hideSidebarOverflowChat" type="checkbox" />
+          Hide chat
+        </li>
+        <li>
+          <input id="hideSidebarOverflowHire" type="checkbox" />
+          Hide hiring
+        </li>
+        <li>
+          <input id="hideSidebarOverflowHqs" type="checkbox" />
+          Hide hot network questions
+        </li>
+      </ul>
+      <button id="save">Save</button>
+      <div id="status"></div>
+    </div>
+    <script src="shared.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>
